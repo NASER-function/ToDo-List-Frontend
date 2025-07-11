@@ -32,8 +32,9 @@ export default function App() {
     <div className="App">
       
         <ThemeContextProvider>
-          <ToDoListApp />
-          {/* {IsOnLine ? <ToDoListApp /> : <OffLine />} */}
+          
+          {/* <ToDoListApp /> */}
+    {IsOnLine ? <ToDoListApp /> : <OffLine />} 
         </ThemeContextProvider>
       
     </div>
