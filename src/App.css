@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital@1&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow: hidden;
+  animation: moveGradient 1s ease infinite alternate;
+}
+
+
+@keyframes moveGradient {
+  0% {
+    background-position: top;
+  }
+  100% {
+    background-position: bottom;
+  }
+}
+
+
+
+/* TOp con */
+
+Typography{
+  font-family: 'Almarai', sans-serif;
+}
+.ConGrid {
+  /* background-color: #9b92aa; */
+  
+  display: flex;
+  justify-content: center;
+}
+/* Time */
+.time {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 80;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* GridCon */
+.GridCon {
+  background: #3e4ce14d;
+  width: 98%;
+  height: 90%;
+  border-radius: 10px;
+  border: 5px double white;
+  justify-content: center;
+  /* align-items: center; */
+ overflow-y: scroll;
+ overflow-x: hidden;
+  
+ 
+}
+
+.GridCon::-webkit-scrollbar{
+  width: 10px;
+  height: 6px;
+}
+.GridCon::-webkit-scrollbar-track{
+  background-color: rgb(11, 38, 38);
+  border-radius: 10px;
+}
+.GridCon::-webkit-scrollbar-thumb{
+  background-color: aqua;
+  border-radius: 10px;
+}
+.rotate {
+  transform: rotate(45deg);
+  transition: transform 1s ease;
+}
+.bt {
+  width: 20px;
+  height: 65px;
+  
+}
+/* card */
+.TOpsaidInCard{
+  width: 120%;
+  height: 50%;
+  display: flex;
+  align-items: space-between;
+  /* justify-content: space-between; */
+}
+.BottomsaidInCard{
+  margin-top: 7px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  
+  
+  
+}
+
+
+.abs{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.OfflineCon{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  direction: ltr;
+}
